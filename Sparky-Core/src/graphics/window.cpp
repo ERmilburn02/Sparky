@@ -3,6 +3,10 @@
 
 namespace sparky { namespace graphics {
 
+	void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
+	void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods);
+	void cursorPositionCallback(GLFWwindow* window, double xpos, double ypos);
+
 	void windowResize(GLFWwindow* window, int width, int height);
 
 	Window::Window(const char* title, int width, int height)
@@ -12,6 +16,12 @@ namespace sparky { namespace graphics {
 		{
 			glfwTerminate();
 		}
+
+		for (int i = 0; i < MAX_KEYS; i++)
+			m_Keys[i] = false;
+
+		for (int i = 0; i < MAX_BUTTONS; i++)
+			m_MouseButtons[i] = false;
 	}
 
 	Window::~Window()
@@ -43,10 +53,19 @@ namespace sparky { namespace graphics {
 		}
 
 		glfwSwapInterval(1);
-
+		glfwSetWindowUserPointer(m_Window, this);
 		glfwSetWindowSizeCallback(m_Window, windowResize);
+		glfwSetKeyCallback(m_Window, keyCallback);
+		glfwSetMouseButtonCallback(m_Window, mouseButtonCallback);
+		glfwSetCursorPosCallback(m_Window, cursorPositionCallback);
 
 		return true;
+	}
+
+	void Window::getMousePosition(double& x, double& y) const
+	{
+		x = mx;
+		y = my;
 	}
 
 	void Window::clear() const
@@ -65,9 +84,45 @@ namespace sparky { namespace graphics {
 		glfwSwapBuffers(m_Window);
 	}
 
+	bool Window::isKeyPressed(unsigned int keycode) const
+	{
+		if (keycode >= MAX_KEYS)
+			return false;
+
+		return m_Keys[keycode];
+	}
+
+	bool Window::isMouseButtonPressed(unsigned int button) const
+	{
+		if (button >= MAX_BUTTONS)
+			return false;
+
+		return m_MouseButtons[button];
+	}
+
+
 	void windowResize(GLFWwindow* window, int width, int height)
 	{
 		glViewport(0, 0, width, height);
+	}
+
+	void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
+	{
+		Window* win = (Window*)glfwGetWindowUserPointer(window);
+		win->m_Keys[key] = (action != GLFW_RELEASE);
+	}
+
+	void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods)
+	{
+		Window* win = (Window*)glfwGetWindowUserPointer(window);
+		win->m_MouseButtons[button] = (action != GLFW_RELEASE);
+	}
+
+	void cursorPositionCallback(GLFWwindow* window, double xpos, double ypos)
+	{
+		Window* win = (Window*)glfwGetWindowUserPointer(window);
+		win->mx = xpos;
+		win->my = ypos;
 	}
 
 } }
