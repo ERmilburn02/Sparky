@@ -19,6 +19,9 @@ int main()
 	glGenVertexArrays(1, &vao);
 	glBindVertexArray(vao);
 
+	mat4 pos = mat4::translation(vec3(2, 3, 4));
+	vec4 col = pos.colums[3];
+
 	while (!window.closed())
 	{
 		window.clear();
