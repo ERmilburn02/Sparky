@@ -172,6 +172,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\graphics\buffers\buffer.cpp" />
+    <ClCompile Include="src\graphics\buffers\indexBuffer.cpp" />
+    <ClCompile Include="src\graphics\buffers\vertexArray.cpp" />
+    <ClCompile Include="src\graphics\renderable2d.cpp" />
     <ClCompile Include="src\graphics\shader.cpp" />
     <ClCompile Include="src\utils\fileUtils.cpp" />
     <ClCompile Include="src\graphics\window.cpp" />
@@ -182,6 +186,11 @@
     <ClCompile Include="src\maths\vec4.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\graphics\buffers\buffer.h" />
+    <ClInclude Include="include\graphics\buffers\buffers.h" />
+    <ClInclude Include="include\graphics\buffers\indexBuffer.h" />
+    <ClInclude Include="include\graphics\buffers\vertexArray.h" />
+    <ClInclude Include="include\graphics\renderable2d.h" />
     <ClInclude Include="include\graphics\shader.h" />
     <ClInclude Include="include\utils\fileUtils.h" />
     <ClInclude Include="include\graphics\window.h" />
