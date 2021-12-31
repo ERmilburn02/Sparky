@@ -51,7 +51,7 @@
     <ClCompile Include="src\graphics\buffers\vertexArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\graphics\renderable2d.cpp">
+    <ClCompile Include="src\graphics\simple2drenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -99,6 +99,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\graphics\buffers\buffers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\graphics\renderer2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\graphics\simple2drenderer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
