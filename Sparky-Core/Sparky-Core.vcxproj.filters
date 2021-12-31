@@ -33,10 +33,10 @@
     <ClCompile Include="src\maths\mat4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\maths\mathsUtils.cpp">
+    <ClCompile Include="src\maths\mathsutils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\utils\fileUtils.cpp">
+    <ClCompile Include="src\utils\fileutils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\graphics\shader.cpp">
@@ -45,13 +45,16 @@
     <ClCompile Include="src\graphics\buffers\buffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\graphics\buffers\indexBuffer.cpp">
+    <ClCompile Include="src\graphics\buffers\indexbuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\graphics\buffers\vertexArray.cpp">
+    <ClCompile Include="src\graphics\buffers\vertexarray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\graphics\simple2drenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\batchrenderer2d.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -77,10 +80,10 @@
     <ClInclude Include="include\maths\mat4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\maths\mathsUtils.h">
+    <ClInclude Include="include\maths\mathsutils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\utils\fileUtils.h">
+    <ClInclude Include="include\utils\fileutils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\graphics\shader.h">
@@ -89,10 +92,10 @@
     <ClInclude Include="include\graphics\buffers\buffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\graphics\buffers\indexBuffer.h">
+    <ClInclude Include="include\graphics\buffers\indexbuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\graphics\buffers\vertexArray.h">
+    <ClInclude Include="include\graphics\buffers\vertexarray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\graphics\renderable2d.h">
@@ -105,6 +108,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\graphics\simple2drenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\graphics\batchrenderer2d.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

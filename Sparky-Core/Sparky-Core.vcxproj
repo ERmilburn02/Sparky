@@ -176,35 +176,35 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="src\graphics\batchRenderer2D.cpp" />
+    <ClCompile Include="src\graphics\batchrenderer2d.cpp" />
     <ClCompile Include="src\graphics\buffers\buffer.cpp" />
-    <ClCompile Include="src\graphics\buffers\indexBuffer.cpp" />
-    <ClCompile Include="src\graphics\buffers\vertexArray.cpp" />
+    <ClCompile Include="src\graphics\buffers\indexbuffer.cpp" />
+    <ClCompile Include="src\graphics\buffers\vertexarray.cpp" />
     <ClCompile Include="src\graphics\simple2drenderer.cpp" />
     <ClCompile Include="src\graphics\shader.cpp" />
-    <ClCompile Include="src\utils\fileUtils.cpp" />
+    <ClCompile Include="src\utils\fileutils.cpp" />
     <ClCompile Include="src\graphics\window.cpp" />
     <ClCompile Include="src\maths\mat4.cpp" />
-    <ClCompile Include="src\maths\mathsUtils.cpp" />
+    <ClCompile Include="src\maths\mathsutils.cpp" />
     <ClCompile Include="src\maths\vec2.cpp" />
     <ClCompile Include="src\maths\vec3.cpp" />
     <ClCompile Include="src\maths\vec4.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\graphics\batchRenderer2D.h" />
+    <ClInclude Include="include\graphics\batchrenderer2d.h" />
     <ClInclude Include="include\graphics\buffers\buffer.h" />
     <ClInclude Include="include\graphics\buffers\buffers.h" />
-    <ClInclude Include="include\graphics\buffers\indexBuffer.h" />
+    <ClInclude Include="include\graphics\buffers\indexbuffer.h" />
     <ClInclude Include="include\graphics\renderer2d.h" />
-    <ClInclude Include="include\graphics\buffers\vertexArray.h" />
+    <ClInclude Include="include\graphics\buffers\vertexarray.h" />
     <ClInclude Include="include\graphics\renderable2d.h" />
     <ClInclude Include="include\graphics\shader.h" />
     <ClInclude Include="include\graphics\simple2drenderer.h" />
-    <ClInclude Include="include\utils\fileUtils.h" />
+    <ClInclude Include="include\utils\fileutils.h" />
     <ClInclude Include="include\graphics\window.h" />
     <ClInclude Include="include\maths\mat4.h" />
     <ClInclude Include="include\maths\maths.h" />
-    <ClInclude Include="include\maths\mathsUtils.h" />
+    <ClInclude Include="include\maths\mathsutils.h" />
     <ClInclude Include="include\maths\vec2.h" />
     <ClInclude Include="include\maths\vec3.h" />
     <ClInclude Include="include\maths\vec4.h" />
