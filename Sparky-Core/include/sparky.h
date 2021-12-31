@@ -8,7 +8,8 @@
 #include "graphics/renderable2d.h"
 #include "graphics/renderer2d.h"
 #include "graphics/simple2drenderer.h"
+#include "graphics/batchrenderer2d.h"
 
 #include "maths/maths.h"
 
-#include "utils/fileUtils.h"
+#include "utils/fileutils.h"

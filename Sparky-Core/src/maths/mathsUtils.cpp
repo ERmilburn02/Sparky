@@ -1,4 +1,4 @@
-#include "maths/mathsUtils.h"
+#include "maths/mathsutils.h"
 
 namespace sparky { namespace maths {
 
