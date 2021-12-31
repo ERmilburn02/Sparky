@@ -1,5 +1,5 @@
 #pragma once
 
 #include "buffer.h"
-#include "indexBuffer.h"
-#include "vertexArray.h"
+#include "indexbuffer.h"
+#include "vertexarray.h"

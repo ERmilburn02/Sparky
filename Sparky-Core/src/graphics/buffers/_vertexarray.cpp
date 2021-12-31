@@ -1,4 +1,4 @@
-#include "graphics/buffers/vertexArray.h"
+#include "graphics/buffers/vertexarray.h"
 
 namespace sparky { namespace graphics {
 
