@@ -1,8 +1,9 @@
 #include <GL/glew.h>
 #include <iostream>
-#include <time.h>
 
 #include "sparky.h"
+
+#include "utils/timer.h"
 
 #define USE_BATCH_RENDERER 1
 #define USE_10K 1
@@ -86,6 +87,9 @@ int main()
 	Simple2DRenderer renderer;
 #endif
 
+	Timer time;
+	float timer = 0;
+	unsigned int frames = 0;
 	while (!window.closed())
 	{
 		window.clear();
@@ -108,5 +112,13 @@ int main()
 		renderer.flush();
 
 		window.update();
+
+		frames++;
+		if ((time.elapsed() - timer) > 1.0f)
+		{
+			timer += 1.0f;
+			printf("[FPS] %d fps\n", frames);
+			frames = 0;
+		}
 	}
 }

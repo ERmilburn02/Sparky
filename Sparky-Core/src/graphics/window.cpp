@@ -52,7 +52,7 @@ namespace sparky { namespace graphics {
 			std::cout << "[ERROR] Failed to initalize GLEW!" << std::endl;
 		}
 
-		glfwSwapInterval(1);
+		glfwSwapInterval(0);
 		glfwSetWindowUserPointer(m_Window, this);
 		glfwSetWindowSizeCallback(m_Window, windowResize);
 		glfwSetKeyCallback(m_Window, keyCallback);
