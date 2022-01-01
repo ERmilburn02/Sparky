@@ -182,6 +182,8 @@
     <ClCompile Include="src\graphics\buffers\vertexarray.cpp" />
     <ClCompile Include="src\graphics\simple2drenderer.cpp" />
     <ClCompile Include="src\graphics\shader.cpp" />
+    <ClCompile Include="src\graphics\sprite.cpp" />
+    <ClCompile Include="src\graphics\staticsprite.cpp" />
     <ClCompile Include="src\utils\fileutils.cpp" />
     <ClCompile Include="src\graphics\window.cpp" />
     <ClCompile Include="src\maths\mat4.cpp" />
@@ -200,6 +202,8 @@
     <ClInclude Include="include\graphics\renderable2d.h" />
     <ClInclude Include="include\graphics\shader.h" />
     <ClInclude Include="include\graphics\simple2drenderer.h" />
+    <ClInclude Include="include\graphics\sprite.h" />
+    <ClInclude Include="include\graphics\staticsprite.h" />
     <ClInclude Include="include\utils\fileutils.h" />
     <ClInclude Include="include\graphics\window.h" />
     <ClInclude Include="include\maths\mat4.h" />
@@ -209,6 +213,7 @@
     <ClInclude Include="include\maths\vec3.h" />
     <ClInclude Include="include\maths\vec4.h" />
     <ClInclude Include="include\sparky.h" />
+    <ClInclude Include="include\utils\timer.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\shaders\Basic.frag" />
